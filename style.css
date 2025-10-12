@@ -20,14 +20,18 @@
 }
 
 .main-title {
-  font-weight: 400;
+  position: absolute;
   font-size: 70px;
   line-height: 78px;
   text-align: center;
-  margin-bottom: 110px;
+  width: 846;
+  height: 78px;
+  top: 220px;
+  left: 217px;
+  font-weight: 400;
 }
 
-.card-conteiner {
+.card-container {
   width: 340px;
   height: 573px;
   padding: 25px;
@@ -44,7 +48,7 @@
   margin-bottom: 5px;
 }
 
-.prouct-name {
+.product-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -71,7 +75,7 @@
   justify-content: space-between;
 }
 
-.product-price-lable {
+.product-price-labl {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -96,19 +100,7 @@
   list-style-type: none;
 }
 
-.heading {
-  position: absolute;
-  font-size: 70px;
-  line-height: 78px;
-  text-align: center;
-  width: 846;
-  height: 78px;
-  top: 220px;
-  left: 217px;
-  font-weight: 400;
-}
-
-.prouct-card {
+.product-card {
   width: 340px;
   height: 573px;
   padding: 25px;
