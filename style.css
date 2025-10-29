@@ -9,7 +9,7 @@
 }
 
 .background {
-  background-image: url('//images/background-flowers.png');
+  background-image: url('/images/background-flowers.png');
   background-size: 790px 697px;
   width: 790px;
   height: 697px;
@@ -106,3 +106,10 @@
   box-shadow: 2px 2px 10px 0px #5150761A;
 }
 
+.bg-aqua {
+  background-color: aqua;
+}
+
+.bg-blue {
+  background-color: blue;
+}
