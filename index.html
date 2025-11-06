@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Card</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
+<>
+  < class="container">
     <h1 class="main-title">Выбери свой продукт</h1>
     <div class="background"></div>
       <ul class="product-wrapper">
+        <button id="change-color-all-cards">Сменить цвет всех карточек</button>
+        <button id="change-color-first-card">Сменить цвет первой карточки</button>
+        <button id="open-google">Открыть страницу Google.com</button>
+        <button class="bg-aqua">Изменение цвета кнопки</button>
         <li class="product-card">
           <img src="/images/moisturizing-musse.png" alt="Увлажняющий мусс" width="290" height="245">
           <span class="product-category">для нормальной кожи</span>
@@ -92,9 +96,11 @@
           <div class="product-price-container">
             <span class="product-price-label">Цена</span>
             <span class="product-price">7 520 &#8381;</span>
-          </div>        
+          </div>
         </li>
       </ul>
+      <script src="main.js"></script>
+      <script src="homework-5.js"></script>
   </div>
 </body>
 </html>
