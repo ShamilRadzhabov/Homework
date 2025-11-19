@@ -117,15 +117,13 @@ const marvelFilms = [
 
 console.log(marvelFilms);
 
-const allFilmsCollection = [...featureFilms, ...marvelFilms,];
+const allFilmsCollection = [...featureFilms, ...marvelFilms];
 console.log(allFilmsCollection);
 
 // №10 С помощью метода map трансформировал исходный массив в новый
 
-const filmsArray = allFilmsCollection.map (function(film) {
-  if (film.year > 2010) {
-    return "modern"
-  }
-})
+const filmsArray = allFilmsCollection.map(
+  film => film.isModern = film.year > 2010
+);
 
 console.log(filmsArray);
