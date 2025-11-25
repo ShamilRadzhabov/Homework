@@ -30,7 +30,7 @@ const changingButtonColor = document.querySelector('.bg-aqua');
 
 changingButtonColor.addEventListener('click', () => {
   changingButtonColor.classList.toggle('bg-blue');
-}) 
+})
 
 // Выведение в консоль принаведении на текст
 const title = document.querySelector('.main-title');
