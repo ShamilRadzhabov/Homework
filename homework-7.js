@@ -4,8 +4,8 @@ import {comments} from './comments.js'
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const newArray = numbers.slice(4);
-console.log(newArray);
+const filterNumbers = numbers.filter(number => number >= 5)
+console.log(filterNumbers);
 
 // №2 Создал массив строк и проверил, есть ли в массиве какая-то определенная сущность
 
