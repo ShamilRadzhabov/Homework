@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<>
-  < class="container">
+<body>
+  <div class="container">
     <h1 class="main-title">Выбери свой продукт</h1>
     <div class="background"></div>
       <ul class="product-wrapper">
@@ -18,91 +18,33 @@
         <button id="change-color-first-card">Сменить цвет первой карточки</button>
         <button id="open-google">Открыть страницу Google.com</button>
         <button class="bg-aqua">Изменение цвета кнопки</button>
-        <li class="product-card">
-          <img src="/images/moisturizing-musse.png" alt="Увлажняющий мусс" width="290" height="245">
-          <span class="product-category">для нормальной кожи</span>
-          <h3 class="product-name">Увлажняющий мусс</h3>
-          <p class="product-description">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
-          <span>Состав:</span>
-          <ul class="product-compound">
-            <li class="product-compound-iteam">активные натуральные комплексы</li>
-            <li class="product-compound-iteam">витамины С, А, РР, В И Е</li>
-            <li class="product-compound-iteam">солнцезащитные компоненты</li>
-          </ul>
-          <div class="product-price-container">
+        <ul class="product-list list-none">
+        </ul>
+        <template id="product-card-template">
+          <li class="product-card">
+            <img id="img" alt="Увлажняющий мусс" width="290" height="245">
+            <span class="product-category">для нормальной кожи</span>
+            <h3 id="title" class="prouct-name"></h3>
+            <p id="description"class="product-description"></p>
+            <span class="product-card-compound">Состав:</span>
+            <ul class="product-compound">
+              <li id="compound-element-one" class="product-compound-iteam"></li>
+              <li id="compound-element-two" class="product-compound-iteam"></li>
+              <li id="compound-element-three" class="product-compound-iteam"></li>              
+            </ul>
+            <div class="product-price-container">
               <span class="product-price-label">Цена</span>
-              <span class="product-price">2 750 &#8381;</span>
-          </div>
-        </li>
-        <li class="product-card">          
-          <img src="/images/moisturizing-mask.png" alt="Увлажняющий маска" width="290" height="245">
-          <span class="product-category">для нормальной кожи</span>
-          <h3 class="prouct-name">Увлажняющий маска</h3>
-          <p class="product-description">Способствует удерживанию влаги в верхних слоях кожи.</p>
-          <span>Состав:</span>
-          <ul class="product-compound">
-            <li class="product-compound-iteam">воски</li>
-            <li class="product-compound-iteam">минералы</li>
-            <li class="product-compound-iteam">масла</li>
-          </ul>
-          <div class="product-price-container">
-            <span class="product-price-label">Цена</span>
-            <span class="product-price">3 500 &#8381;</span>
-          </div>
-        </li>
-        <li class="product-card">       
-          <img src="/images/face-wash-gel.png" alt="Гель для умывания" width="290" height="245">
-          <span class="product-category">для нормальной кожи</span>
-          <h3 class="prouct-name">Гель для умывания</h3>
-          <p class="product-description">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
-          <span>Состав:</span>
-          <ul class="product-compound">
-            <li class="product-compound-iteam">минералы</li>
-            <li class="product-compound-iteam">витамины С, А, РР, В И Е</li>
-            <li class="product-compound-iteam">солнцезащитные компоненты</li>
-          </ul>
-          <div class="product-price-container">
-            <span class="product-price-label">Цена</span>
-            <span class="product-price">1 650 &#8381;</span>
-          </div>
-        </li>
-        <li class="product-card">        
-          <img src="/images/gift-set-1.png" alt="Подарочный набор №1" width="290" height="245">
-          <span class="product-category">для нормальной кожи</span>
-          <h3 class="prouct-name">Подарочный набор №1</h3>
-          <p class="product-description">Набор, состоящий из увлажняющего крема и маски.</p>
-          <span>Состав:</span>
-          <ul class="product-compound">
-            <li class="product-compound-iteam">воски</li>
-            <li class="product-compound-iteam">минералы</li>
-            <li class="product-compound-iteam">масла</li>
-          </ul>
-          <div class="product-price-container">
-            <span class="product-price-label">Цена</span>
-            <span class="product-price">4 750 &#8381;</span>
-          </div>
-        </li>
-        <li class="product-card">          
-          <img src="/images/gift-set-5.png" alt="Подарочный набор №5" width="290" height="245">
-          <span class="product-category">для нормальной кожи</span>
-          <h3 class="prouct-name">Подарочный набор №5</h3>
-          <p class="product-description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
-          <span>Состав:</span>
-          <ul class="product-compound">
-            <li class="product-compound-iteam">воски</li>
-            <li class="product-compound-iteam">минералы</li>
-            <li class="product-compound-iteam">масла</li>
-          </ul>
-          <div class="product-price-container">
-            <span class="product-price-label">Цена</span>
-            <span class="product-price">7 520 &#8381;</span>
-          </div>
+              <span id="price" class="product-price"></span>
+            </div>
+          </li>
+        </template>
         </li>
       </ul>
       <script src="main.js"></script>
       <script src="homework-5.js"></script>
       <script src="homework-6.js"></script>
       <script src="homework-7.js" type="module"></script>
+      <script src="homework-8.js" type="module"></script>
   </div>
 </body>
 </html>
