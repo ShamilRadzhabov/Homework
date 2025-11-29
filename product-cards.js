@@ -4,30 +4,24 @@ export const productCards = [
     alt: "Картинка увлажняющего мусса",
     productTitle: "Увлажняющий мусс",
     description: "Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.",
-    compoundElementOne: "активные натуральные комплексы",
-    compoundElementTwo: "витамины С, А, РР, В И Е",
-    compoundElementThree: "солнцезащитные компоненты",
-     price: "2 750"
+    compound: ["активные натуральные комплексы", "витамины С, А, РР, В И Е", "солнцезащитные компоненты"],
+    price: 2750,
 },
 {
     url: "images/moisturizing-mask.png",
     alt: "Картинка увлажняющей маски",
     productTitle: "Увлажняющая маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи.",
-    compoundElementOne: "воски",
-    compoundElementTwo: "минералы",
-    compoundElementThree: "масла",
-    price: "3 500"
+    compound: ["воски", "минералы", "масла"],
+    price: 3500,
 },
 {
     url: "images/face-wash-gel.png",
     alt: "Картинка геля",
     productTitle: "Гель для умывания",
     description: "Интенсивно очищает, не повреждает защитный барьер кожи.",
-    compoundElementOne: "воски",
-    compoundElementTwo: "минералы",
-    compoundElementThree: "масла",
-    price: "1 650"
+    compound: ["воски", "минералы", "масла"],
+    price: 1650,
 
 },
 {
@@ -35,19 +29,15 @@ export const productCards = [
     alt: "Картинка подарочного набора",
     productTitle: "Подарочный набор &#8470;1",
     description: "Набор, состоящий из увлажняющего крема и маски.",
-    compoundElementOne: "воски",
-    compoundElementTwo: "минералы",
-    compoundElementThree: "масла",
-    price: "4 750"
+    compound: ["воски", "минералы", "масла"],
+    price: 4750,
 },
 {
     url: "images/gift-set-5.png",
     alt: "Картинка подарочного набора",
     productTitle: "Подарочный набор &#8470;5",
     description: "Весь набор средств Invisible symphony, крем, маска, мусс и гель",
-    compoundElementOne: "воски",
-    compoundElementTwo: "минералы",
-    compoundElementThree: "масла",
-    price:"7 520"
+    compound: ["воски", "минералы", "масла"],
+    price: 7520,
 }
 ];

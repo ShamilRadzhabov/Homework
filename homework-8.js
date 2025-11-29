@@ -10,9 +10,7 @@ productCards.forEach(card => {
   productCardClone.querySelector('#img').alt = card.alt;
   productCardClone.querySelector('#title').innerHTML = card.productTitle;
   productCardClone.querySelector('#description').textContent = card.description;
-  productCardClone.querySelector('#compound-element-one').textContent = card.compoundElementOne;
-  productCardClone.querySelector('#compound-element-two').textContent = card.compoundElementTwo;
-  productCardClone.querySelector('#compound-element-three').textContent = card.compoundElementThree;
+  productCardClone.querySelector('.product-compound-iteam').innerHTML = card.compound.map(item => `<li>${item}</li>`).join("");
   productCardClone.querySelector('#price').innerHTML = card.price + '&#8381'
   productCardsList.appendChild(productCardClone);
 });
@@ -29,31 +27,24 @@ console.log(productCardsTitleStrings);
 
 // №3 Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
-const getProductCardArray = productCards.reduce((acc, card) => {
+const ProductCardArray = productCards.reduce((acc, card) => {
     acc.push({[card.productTitle]: card.description});
     return acc;
 }, []);
 
-console.log(getProductCardArray);
+console.log(ProductCardArray);
 
 // №4 Реализовать функцию, которая при старте нашей страницы выводит сообщение с текстом.
 
-const ShowCards = () => {
+const showCards = () => {
   const question = prompt("Сколько карточек отобразить? От 1 до 5");
   const numbers = Number(question);
-
-  if (
-    isNaN(numbers) ||
-    numbers < 1 ||
-    numbers > 5 ||
-    numbers > productCards.length
-  ) {
+  if (numbers > 0 && numbers <= productCards.length) {
+    outputProductCards(productCards.slice(0, numbers));
+  } else {
     alert("Введите число от 1 до 5");
-    return;
   }
+}
 
-  productCards(productCards.slice(0, numbers));
-};
-
-ShowCards();
+showCards()
 
