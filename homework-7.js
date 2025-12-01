@@ -19,7 +19,7 @@ const getReverseArray = (arr) => {
   return arr.reverse();
 }; 
 
-getReverseArray(newArray)
+
 console.log(getReverseArray(films));
  
 // №4 Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
