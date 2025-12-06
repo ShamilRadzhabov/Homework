@@ -2,7 +2,7 @@
 
 const buttonSubscribe = document.querySelector('.footer-email-btn-subscribe')
 const footerEmail = document.querySelector('.footer-email-form-container')
-const emailValidationReg = /^[^\s]+@mail\.ru$/
+const emailValidationRegexp = /^[^\s]+@gmail\.com$/
 
 buttonSubscribe.addEventListener('click', (e) => {
   const formData = new FormData(footerEmail)
@@ -54,7 +54,7 @@ formRegBtn.addEventListener('click', () => {
       formErrorEmailText.textContent = '';
       if (!emailValidationRegexp.test(el.value)) {
         el.classList.add('error')
-        formErrorEmailText.textContent = 'Некоректный email'
+        formErrorEmailText.textContent = 'Некорректный email'
         hasError = true;
       }
     }
@@ -80,11 +80,7 @@ formRegBtn.addEventListener('click', () => {
   }
 
   currentUser = {
-    email: data.email,
-    password: data.password,
-    firstname: data.firstname,
-    surname: data.surname,
-    birthday: data.birthday,
+    ...data,
     createdOn: new Date()
   }
 

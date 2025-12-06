@@ -37,14 +37,14 @@ console.log(productCardArray);
 // №4 Реализовать функцию, которая при старте нашей страницы выводит сообщение с текстом.
 
 
-// const showCards = () => {
-//   const count = prompt("Сколько карточек отобразить? От 1 до 5");
-//   const numbers = Number(count);
-//   if (numbers > 0 && numbers <= productCards.length) {
-//     outputProductCards(productCards.slice(0, numbers));
-//   } else {
-//     alert("Введите число от 1 до 5");
-//   };
-// };
+const showCards = () => {
+  const count = prompt("Сколько карточек отобразить? От 1 до 5");
+  const numbers = Number(count);
+  if (numbers > 0 && numbers <= productCards.length) {
+    outputProductCards(productCards.slice(0, numbers));
+  } else {
+    alert("Введите число от 1 до 5");
+  };
+};
 
-// showCards()
+showCards()
